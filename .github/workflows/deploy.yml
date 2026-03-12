@@ -37,20 +37,21 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies (Root)
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: Build (Root)
         run: npm run build
       - name: Install dependencies (Page2)
         run: |
           cd page2
-          npm install
+          npm install --legacy-peer-deps
       - name: Build (Page2)
         run: |
           cd page2
           npm run build
       - name: Combine builds
         run: |
-          mv page2/dist dist/page2
+          mkdir -p dist/page2
+          cp -r page2/dist/* dist/page2/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
