@@ -246,10 +246,10 @@ export default function App() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group px-12 py-5 bg-white text-slate-900 rounded-full font-bold transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
-              무료 교육 상담 신청
+            <a href="/TESOL/page2/" className="group px-12 py-5 bg-white text-slate-900 rounded-full font-bold transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
+              TESOL 바로가기
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             <button className="px-12 py-5 border border-white/10 text-white rounded-full font-medium transition-all hover:bg-white/5 hover:border-white/20">
               커리큘럼 상세 보기
             </button>
