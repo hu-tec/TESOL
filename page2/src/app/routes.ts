@@ -47,4 +47,4 @@ export const router = createBrowserRouter([
       { path: "*", Component: HomePage },
     ],
   },
-]);
+], { basename: "/TESOL/page2/" });

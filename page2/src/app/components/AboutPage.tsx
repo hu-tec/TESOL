@@ -354,9 +354,14 @@ export function AboutPage() {
                   { title: "부산대센터", desc: "금정구 장전동 소재" },
                   { title: "제주센터", desc: "제주시 소재" },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow">
-                    <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.title}</h4>
-                    <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white flex-shrink-0 flex items-center justify-center border border-gray-100">
+                      <ImageWithFallback src={`/img/logo/center_${i+1}.png`} alt={item.title} className="max-w-[90%] max-h-[90%] object-contain" />
+                    </div>
+                    <div>
+                      <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.title}</h4>
+                      <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -379,9 +384,14 @@ export function AboutPage() {
                   { name: "KNN TV / CBS", desc: "교육문화사업 공식 파트너" },
                   { name: "국제통번역시험위원회", desc: "ITT 시험 주관 및 관리" },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow">
-                    <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.name}</h4>
-                    <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white flex-shrink-0 flex items-center justify-center border border-gray-100">
+                      <ImageWithFallback src={`/img/logo/partner_${i+1}.${i === 7 ? 'jpg' : 'png'}`} alt={item.name} className="max-w-[90%] max-h-[90%] object-contain" />
+                    </div>
+                    <div>
+                      <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.name}</h4>
+                      <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -407,7 +417,12 @@ export function AboutPage() {
                   { name: "NATTI", loc: "호주" },
                 ].map((item, i) => (
                   <div key={i} className="bg-white p-3 border border-gray-100 flex items-center justify-between hover:shadow-sm transition-shadow group">
-                    <span className="text-[13px] text-[#1a1a2e] font-bold">{item.name}</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-white flex-shrink-0 flex items-center justify-center border border-gray-100">
+                        <ImageWithFallback src={`/img/logo/global_${i+1}.png`} alt={item.name} className="max-w-[90%] max-h-[90%] object-contain" />
+                      </div>
+                      <span className="text-[13px] text-[#1a1a2e] font-bold">{item.name}</span>
+                    </div>
                     <span className="text-[10px] text-gray-400 bg-gray-50 px-2 py-0.5 rounded-full group-hover:bg-[#8B1A2B] group-hover:text-white transition-colors">
                       {item.loc}
                     </span>
@@ -431,9 +446,14 @@ export function AboutPage() {
                   { title: "중국 비즈니스 센터", desc: "통번역 및 실무 교육 진행" },
                   { title: "AITe 글로벌 센터", desc: "AI 인공지능 프롬프트 국제본부" },
                 ].map((item, i) => (
-                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow">
-                    <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.title}</h4>
-                    <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                  <div key={i} className="bg-white p-4 border border-gray-100 hover:shadow-sm transition-shadow flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gray-50 flex-shrink-0 flex items-center justify-center border border-gray-100">
+                      <ImageWithFallback src={`/img/logo/overseas_${i+1}.png`} alt={item.title} className="max-w-[80%] max-h-[80%] object-contain grayscale opacity-60" />
+                    </div>
+                    <div>
+                      <h4 className="text-[14px] text-[#1a1a2e] font-bold">{item.title}</h4>
+                      <p className="text-gray-500 text-[11px] mt-1">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
                 <div className="mt-8 pt-4 border-t border-gray-200">
