@@ -51,51 +51,66 @@ const mainCourses = [
   {
     id: "tesol",
     icon: GraduationCap,
-    title: "TESOL 영어교육",
+    title: "TESOL 과정",
     tag: "8주 완성",
     path: "/courses/tesol",
     color: "bg-[#e11d48]", // Red
+    img: "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600",
+    desc1: "글로벌 영어 교사 양성",
+    desc2: "8주 완성 집중 프로그램 제공"
   },
   {
     id: "ai-trans",
     icon: Languages,
-    title: "AI 번역 전문가",
+    title: "AI번역 코칭 전문가",
     tag: "미래 직업",
     path: "/courses/ai-translation",
     color: "bg-[#2563eb]", // Blue
+    img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=600",
+    desc1: "AI를 활용한 번역 실무스킬",
+    desc2: "최신 AI 번역 트렌드 반영"
   },
   {
     id: "ai-prompt",
     icon: Bot,
-    title: "AI 프롬프트",
+    title: "AI프롬프트 전문가",
     tag: "업무 생산성",
     path: "/courses/ai-prompt",
     color: "bg-[#059669]", // Green
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600",
+    desc1: "AI 도구 활용 전문가 양성",
+    desc2: "실전 AI 과업수행 전략 교육"
   },
   {
     id: "ai-ethics",
     icon: Shield,
-    title: "AI 윤리/보안",
+    title: "AI윤리/보안",
     tag: "필수 교육",
     path: "/courses/ai-ethics",
     color: "bg-[#334155]", // Slate/Navy
+    img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600",
+    desc1: "기업/개인 AI 윤리 가이드",
+    desc2: "안전한 활용을 위한 필수교육"
   },
   {
     id: "itt",
     icon: Globe,
-    title: "ITT 정통 통번역",
+    title: "ITT 통번역",
     tag: "25년 전통",
     path: "/courses/itt",
     color: "bg-[#ea580c]", // Orange
+    img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=600",
+    desc1: "25년 전통의 공신력",
+    desc2: "실무번역 전문자격 취득과정"
   },
 ];
 
 const quickServices = [
-  { title: "레벨테스트", path: "/apply/level-test", icon: ClipboardCheck },
-  { title: "학습 TIP", path: "/apply/tip", icon: BookOpen },
-  { title: "기업 견적", path: "/apply/corporate", icon: Building },
-  { title: "세미나 신청", path: "/apply/seminar", icon: Users },
-  { title: "입학설명회", path: "/apply/orientation", icon: GraduationCap },
+  { title: "레벨테스트", subtitle: "실력 진단", path: "/apply/level-test", icon: ClipboardCheck },
+  { title: "학습 TIP", subtitle: "노하우 전수", path: "/apply/tip", icon: BookOpen },
+  { title: "기업 견적", subtitle: "B2B 문의", path: "/apply/corporate", icon: Building },
+  { title: "세미나", subtitle: "참가 신청", path: "/apply/seminar", icon: Users },
+  { title: "입학설명회", subtitle: "방문 상담", path: "/apply/orientation", icon: GraduationCap },
 ];
 
 const stats = [
@@ -405,6 +420,107 @@ export function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* 1. ABOUT US */}
+      <section className="py-24 bg-white border-b border-gray-100">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 className="text-[#8B1A2B] text-[14px] font-bold tracking-widest uppercase mb-4">About Us</h3>
+              <h2 className="text-[36px] lg:text-[42px] font-extrabold text-[#1a1a2e] leading-tight mb-8" style={{ wordBreak: "keep-all" }}>
+                대한민국 최대 규모의<br />글로벌 교육 전문기관
+              </h2>
+            </div>
+            <div>
+              <p className="text-gray-600 mb-6 leading-relaxed text-[16px]">
+                2001년 설립된 (주)타임스미디어는 23년여 동안 3만 명 이상의 수강생 인재를 배출해온 대한민국의 대표 교육 전문기관입니다. 국내 유일하게 TESOL, ITT 통번역, AI 번역, AI 프롬프트, AI 윤리보안 통합 교육을 제공하며, 연세대학교, 동국대, 한양대 등 명문대학교와 함께 진행하고 있습니다.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed text-[16px]">
+                미래 사회의 리더를 양성하기 위해 전통 교육에 AI 기술을 융합하여 실무 현장에서 즉시 활용 가능한 전문 인재를 키워내고 있습니다.
+              </p>
+              <button className="bg-[#8B1A2B] text-white px-8 py-3 rounded-sm font-bold flex items-center gap-2 hover:bg-[#6a1220] transition-colors">
+                더 알아보기 <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. PROGRAMS */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h3 className="text-[#8B1A2B] text-[14px] font-bold tracking-widest uppercase mb-4">Programs</h3>
+            <h2 className="text-[32px] lg:text-[38px] font-extrabold text-[#1a1a2e] leading-tight mb-4">
+              미래를 준비하는 5가지 전문 과정
+            </h2>
+            <p className="text-gray-500 font-medium">
+              AI 시대를 맞은 체계적인 교육으로 글로벌 전문가를 꿈꾸세요
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {mainCourses.map((course) => (
+              <Link key={course.id} to={course.path} className="group border border-gray-200 rounded-sm overflow-hidden bg-white hover:shadow-xl transition-all flex flex-col">
+                <div className="relative h-40 xl:h-48 overflow-hidden shrink-0">
+                  {course.img ? (
+                    <ImageWithFallback src={course.img} alt={course.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  ) : (
+                    <div className={`w-full h-full ${course.color} opacity-80`} />
+                  )}
+                  <div className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/50">
+                    <course.icon className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-[18px] font-black text-[#1a1a2e] mb-4 2xl:text-[20px] leading-tight break-keep">{course.title}</h3>
+                    <ul className="text-[13px] text-gray-500 space-y-2 mb-6 break-keep">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#8B1A2B] font-black mt-0.5">·</span> 
+                        <span className="leading-snug">{course.desc1}</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#8B1A2B] font-black mt-0.5">·</span> 
+                        <span className="leading-snug">{course.desc2}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="text-[#8B1A2B] text-[14px] font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                    바로가기 <ChevronRight className="w-4 h-4" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 2-1. SERVICES */}
+      <section className="py-24 bg-white border-t border-gray-100">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-[32px] lg:text-[36px] font-extrabold text-[#1a1a2e] leading-tight mb-4">
+              맞춤형 교육 서비스
+            </h2>
+            <p className="text-gray-500 font-medium border-b border-transparent inline-block pb-1">
+              필요하신 서비스를 선택하여 간편하게 진행하세요.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+            {quickServices.map((service) => (
+              <Link key={service.title} to={service.path} className="group bg-white border border-gray-100 rounded-xl p-6 lg:p-8 flex flex-col items-center hover:border-[#8B1A2B]/40 hover:shadow-xl transition-all text-center">
+                <div className="w-16 h-16 bg-[#fffafa] rounded-2xl flex items-center justify-center mb-5 border border-[#ffe0e0] group-hover:bg-[#8B1A2B] transition-colors relative overflow-hidden">
+                  <service.icon className="w-7 h-7 text-[#8B1A2B] group-hover:text-white transition-colors relative z-10" />
+                </div>
+                <h4 className="text-[16px] font-black text-[#1a1a2e] mb-2">{service.title}</h4>
+                <p className="text-[13px] text-gray-400 break-keep">{service.subtitle}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Stats Section: Impact Bar */}
       <section className="py-24 bg-[#0a0a14] relative overflow-hidden">
