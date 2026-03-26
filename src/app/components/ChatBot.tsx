@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { MessageSquare, X, Send, ChevronRight } from "lucide-react";
 
 export function ChatBot() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
 

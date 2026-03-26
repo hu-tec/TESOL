@@ -13,13 +13,7 @@ import { CommunityPage } from "./components/CommunityPage";
 import { ContactPage } from "./components/ContactPage";
 import { LoginPage } from "./components/LoginPage";
 import { RegisterPage } from "./components/RegisterPage";
-import { 
-  LevelTestPage, 
-  TipApplicationPage, 
-  CorporateEstimatePage, 
-  SeminarApplicationPage, 
-  OrientationApplicationPage 
-} from "./components/FormsPage";
+import { ApplyPage } from "./components/ApplyPage";
 
 export const router = createBrowserRouter([
   {
@@ -39,11 +33,12 @@ export const router = createBrowserRouter([
       { path: "contact", Component: ContactPage },
       { path: "login", Component: LoginPage },
       { path: "register", Component: RegisterPage },
-      { path: "apply/level-test", Component: LevelTestPage },
-      { path: "apply/tip", Component: TipApplicationPage },
-      { path: "apply/corporate", Component: CorporateEstimatePage },
-      { path: "apply/seminar", Component: SeminarApplicationPage },
-      { path: "apply/orientation", Component: OrientationApplicationPage },
+      { path: "apply", Component: ApplyPage },
+      { path: "apply/level-test", Component: ApplyPage },
+      { path: "apply/tip", Component: ApplyPage },
+      { path: "apply/corporate", Component: ApplyPage },
+      { path: "apply/seminar", Component: ApplyPage },
+      { path: "apply/orientation", Component: ApplyPage },
       { path: "*", Component: HomePage },
     ],
   },
