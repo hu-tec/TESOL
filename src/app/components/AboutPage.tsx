@@ -360,7 +360,7 @@ export function AboutPage() {
             <div className="space-y-6">
               <div className="flex items-center gap-3 pb-2 border-b-2 border-[#8B1A2B]">
                 <Handshake className="w-5 h-5 text-[#8B1A2B]" />
-                <h3 className="text-[17px] font-bold text-[#1a1a2e]">전 언론/ 학회 협약처</h3>
+                <h3 className="text-[17px] font-bold text-[#1a1a2e]">언론 교육센터 및 학회 협약처</h3>
               </div>
               <div className="space-y-2">
                 {[
@@ -379,7 +379,7 @@ export function AboutPage() {
             <div className="space-y-6">
               <div className="flex items-center gap-3 pb-2 border-b-2 border-[#8B1A2B]">
                 <Globe className="w-5 h-5 text-[#8B1A2B]" />
-                <h3 className="text-[17px] font-bold text-[#1a1a2e]">해외 대학 / 업무 협약</h3>
+                <h3 className="text-[17px] font-bold text-[#1a1a2e]">해외 교육 센터 및 교육 협약처</h3>
               </div>
               <div className="space-y-2">
                 {[
@@ -398,7 +398,7 @@ export function AboutPage() {
             <div className="space-y-6">
               <div className="flex items-center gap-3 pb-2 border-b-2 border-[#8B1A2B]">
                 <Users className="w-5 h-5 text-[#8B1A2B]" />
-                <h3 className="text-[17px] font-bold text-[#1a1a2e]">해외 제휴 및 협업 기관</h3>
+                <h3 className="text-[17px] font-bold text-[#1a1a2e]">해외 제휴 협업 기관</h3>
               </div>
               <div className="space-y-2">
                 {[
