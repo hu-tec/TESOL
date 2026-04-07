@@ -31,34 +31,47 @@ const notices = [
 ];
 
 const faqs = [
-  { 
-    id: 1,
-    mainType: "common",
-    category: "수강신청",
-    question: "비전공자도 TESOL 과정을 수강할 수 있나요?", 
-    answer: "네, 전공에 상관없이 영어 교육에 열정이 있는 분이라면 누구나 수강 가능합니다. 레벨테스트를 통해 적합한 반을 추천해 드립니다." 
-  },
-  { 
-    id: 2,
-    mainType: "tesol",
-    subType: "itt",
-    category: "자격증",
-    question: "수료 후 발급되는 자격증은 공신력이 있나요?", 
-    answer: "타임스미디어에서 발급하는 TESOL 및 ITT 자격증은 국내외 교육기관 및 기업에서 널리 인정받는 공신력 있는 민간 자격증입니다." 
-  },
-  { 
-    id: 3,
-    mainType: "kids-tesol",
-    category: "어린이테솔",
-    question: "어린이 테솔 과정의 특징은 무엇인가요?", 
-    answer: "어린이들의 발달 단계에 맞춘 놀이 중심의 영어 교육법과 교실 관리 전략을 배웁니다. 실제 유치원 및 초등 방과후 교실에서 바로 활용 가능한 실습 중심 과정입니다." 
-  }
+  { id: 1, mainType: "tesol", category: "프로그램 정보", question: "TESOL (영어교사 양성과정)이 무엇인가요?", answer: "TESOL(Teaching English to Speakers of Other Languages)은 영어가 모국어가 아닌 사람들에게 영어를 가르치기 위한 국제 공인 영어교수법 과정입니다. 전 세계적으로 인정받는 영어 교사 양성 프로그램입니다." },
+  { id: 2, mainType: "kids-tesol", category: "프로그램 정보", question: "TESOL for Children (어린이테솔)은 무엇인가요?", answer: "어린이테솔은 3세부터 12세 미만의 어린이들을 대상으로 영어를 효과적이고 흥미롭게 가르칠 수 있는 교수법을 배우는 특화된 과정입니다. 놀이, 노래, 챈트 등을 활용한 실무 위주의 교육이 진행됩니다." },
+  { id: 3, mainType: "tesol", category: "자격증", question: "해외에서도 활용 가능한 Certificate인가요?", answer: "네, 맞습니다. 캘리포니아 주립대 롱비치(CSULB) 명의로 발급되는 Certificate는 미국을 비롯한 전 세계 어느 곳에서나 그 권위와 수준을 인정받고 있습니다." },
+  { id: 4, mainType: "tesol", category: "기관 소개", question: "캘리포니아 주립대학교 롱비치는 어떤 대학인가요?", answer: "캘리포니아 주립대학교 롱비치(CSULB)는 캘리포니아 주립대 시스템 중 가장 크고 명성 높은 캠퍼스 중 하나로, 특히 교육학 분야에서 뛰어난 평가를 받고 있는 우수한 주립대학교입니다." },
+  { id: 5, mainType: "tesol", category: "수강신청", question: "학사이상만 지원할 수 있나요? 지원자격이 궁금합니다.", answer: "아닙니다. 전문대졸, 재학생, 고졸 등 학력에 제한 없이 지원 가능합니다. 단, 과정을 무사히 이수할 수 있는 기본적인 영어 실력을 갖추었는지 확인하는 레벨테스트를 통과하셔야 입학이 가능합니다." },
+  { id: 6, mainType: "tesol", category: "수업관련", question: "한국인 강사가 강의하나요?", answer: "TESOL 과정은 다년간의 강의 경력과 테솔/언어학 관련 석사 이상의 학위를 보유한 우수한 원어민 강사진이 100% 영어로 진행합니다." },
+  { id: 7, mainType: "common", category: "수업료", question: "비용이 많이 비싸네요?", answer: "미국 현지로 유학 가서 관련 과정을 이수하는 것에 비해 훨씬 경제적입니다. 현지 수준의 퀄리티 높은 오프라인 강의를 합리적인 비용에 국내에서 제공하고 있으며, 다양한 혜택을 통해 수강생의 부담을 덜어드리고자 노력하고 있습니다." },
+  { id: 8, mainType: "tesol", category: "프로그램 정보", question: "국내 대학에도 TESOL프로그램들이 있던데 다른 점이 무엇인가요?", answer: "국내 대학 테솔 과정의 경우 해당 대학 명의의 수료증이 발급되는 반면, 본 과정은 미국 주립대학교 (CSULB) 총장 명의의 Certificate가 직접 발급되어 공신력이 다릅니다." },
+  { id: 9, mainType: "tesol", category: "자격증", question: "국내대학 TESOL 프로그램과 동일하게 인정받을 수 있나요?", answer: "네, 물론입니다. 국내뿐만 아니라 오히려 해외 학위로 인정되어 다양한 취업처에서 국내 테솔 수료보다 높은 경쟁력을 가질 수 있습니다." },
+  { id: 10, mainType: "common", category: "수업관련", question: "수업을 들을 수 있는 영어 레벨이 따로 있나요? 공인인증시험이 필요한가요?", answer: "공인인증시험 점수(토익, 토플 등)가 필수사항은 아닙니다. 자체 레벨테스트 결과에 따라 입학 여부가 결정되며, 일정 수준의 기초 영어 회화 및 작문 실력이 요구됩니다." },
+  { id: 11, mainType: "common", category: "수강신청", question: "레벨테스트 시험은 어떻게 보나요?", answer: "레벨테스트는 사전 예약 후 오프라인 센터에 방문하여 원어민 강사와의 1:1 인터뷰 형식으로 진행됩니다. 기본적인 회화 능력 및 발음, 문법 등을 종합적으로 평가합니다." },
+  { id: 12, mainType: "common", category: "수강신청", question: "레벨테스트에 떨어지면 수강을 못하게 되나요?", answer: "정규 과정을 수강하기에 영어 실력이 부족하다고 판단될 경우, 테솔 대비반(Pre-TESOL) 수강 권유나 재시험 기회를 제공하고 있습니다. 누구나 준비를 통해 입학 가능합니다." },
+  { id: 13, mainType: "tesol-prep", category: "프로그램 정보", question: "Pre-TESOL(테솔대비반)은 무엇인가요?", answer: "정규 TESOL 과정 입학을 위해 영어 기초 체력(회화, 문법, 독해 등)을 단기간에 끌어올리는 사전 준비 과정입니다. 원어민 100% 영어 수업에 대한 적응력을 키워줍니다." },
+  { id: 14, mainType: "tesol", category: "프로그램 정보", question: "테솔과 어린이 테솔이 있는데 어떤걸 들어야 할까요?", answer: "가르치고자 하는 대상(Target Audience)에 따라 선택하시면 됩니다. 유치/초등부 강사를 희망하시면 어린이 테솔, 중고등부/성인 대상 또는 광범위한 교수법이 필요하시면 일반 테솔을 추천합니다." },
+  { id: 15, mainType: "tesol", subType: "job", category: "취업", question: "영어강사가 자격증을 취득하면 무엇이 좋나요?", answer: "입증된 티칭 스킬을 자격증으로 증명하여 채용 시 우대를 받을 수 있습니다. 또한 체계적인 교수법 습득으로 수업 퀄리티가 향상되며, 강사로서의 전문성과 자신감을 한 단계 업그레이드할 수 있습니다." },
+  { id: 16, mainType: "tesol", subType: "job", category: "취업", question: "TESOL Certificate을 취득하면 취업도 연결해 주나요?", answer: "자체 취업 지원 센터를 통해 우수 졸업생 대상으로 제휴 된 어학원 및 교육기관의 구인 정보 제공, 이력서 첨삭 등 다양한 취업 지원 서비스를 제공하고 있습니다." },
+  { id: 17, mainType: "common", category: "수업관련", question: "서울 외 다른 지역에서도 들을 수 있나요?", answer: "현장감 넘치는 오프라인 수업은 현재 서울 센터에서 진행되고 있습니다만, 타 지역 거주자분들을 위해 오프라인 수업의 퀄리티를 그대로 구현한 온라인(Live) 클래스도 운영 중입니다." },
+  { id: 18, mainType: "tesol", category: "수강신청", question: "그동안 어떤 분들이 듣고 Certificate을 취득했나요?", answer: "현직 영어 강사, 예비 강사, 해외 유학 및 워킹홀리데이 준비생, 그리고 영어 교육에 관심 있는 학부모님 등 다양한 배경을 가진 수많은 분들이 성공적으로 과정을 수료하셨습니다." },
+  { id: 19, mainType: "tesol", category: "자격증", question: "수업을 들으면 Certificate 은 다 주나요?", answer: "단순히 출석만 한다고 주어지는 것은 아닙니다. 엄격한 학사 관리 기준(출석률, 과제 점수, 실습 평가 등)을 모두 통과한 분들께만 정식 Certificate이 발급됩니다." },
+  { id: 20, mainType: "tesol", category: "수강신청", question: "원어민이나 다른 나라 국적의 사람들도 들을 수 있나요?", answer: "네, 국적에 상관없이 누구나 수강 가능합니다. 실제로 영어를 모국어로 사용하는 원어민 강사들도 교수법을 배우기 위해 본 과정을 다수 수강하고 있습니다." },
+  { id: 21, mainType: "common", category: "수강신청", question: "수강신청을 하고 싶은데 어떻게 하면 되나요?", answer: "홈페이지를 통한 온라인 접수, 전화, 혹은 센터 방문 상담을 통해 수강 신청이 가능합니다. 우선 레벨테스트 일정을 예약해 주시기 바랍니다." },
+  { id: 22, mainType: "tesol", subType: "job", category: "취업", question: "테솔 수료후 어떻게 활용할수있나요?", answer: "유치원, 어학원 강사 취업뿐만 아니라 영어 공부방 창업, 방과후 소속 교사, 기업 출강 강사, 프리랜서 등 영어 교육과 관련된 다양한 분야로 진출하여 활용할 수 있습니다." },
+  { id: 23, mainType: "tesol", category: "자격증", question: "정말 주립대 미국 Certificate를 준다는데 한국에서 가능한 것인가요?", answer: "네, 본 교육센터는 캘리포니아 주립대 롱비치(CSULB)와의 공식 업무 협약을 통해 커리큘럼을 승인받아 국내에서 동일한 교육 과정을 제공하며 정규 Certificate를 발급하고 있습니다." },
+  { id: 24, mainType: "tesol", subType: "itt", category: "프로그램 정보", question: "국내 대학과정하고 다른점이 무엇이며 국내나 해외에서 활용이 가능한 것인가요?", answer: "가장 큰 차이는 발급 기관(미국 주립대 vs 국내 대학)입니다. 국제적으로 통용되는 Certificate이므로 국내는 물론 아포스티유(Apostille) 인증 등을 통해 해외 취업 시에도 공신력을 갖습니다." },
+  { id: 25, mainType: "tesol", subType: "job", category: "취업", question: "타임스테솔 졸업후 취업연계도 해주시나요?", answer: "네, 우수한 성적으로 수료한 졸업생분들께는 파트너 어학원 채용 추천, 영문 이력서 및 인터뷰 가이드 등 실질적인 취업 연계 혜택을 제공하고 있습니다." }
 ];
 
 const qnas = [
   { id: 1, title: "어린이 테솔 주말반 개설 계획이 있나요?", name: "김*철", date: "2026.03.05", status: "답변완료", mainType: "kids-tesol" },
   { id: 2, title: "테솔 대비반 수강 후 정규 과정 할인 혜택이 있나요?", name: "박*연", date: "2026.03.04", status: "답변대기", mainType: "tesol-prep" },
   { id: 3, title: "AI 프롬프트 과정 수강료 할인이 가능한가요?", name: "최*호", date: "2026.03.02", status: "답변완료", mainType: "tesol", subType: "prompt" },
+  { id: 4, title: "오프라인 수업 출석 기준이 궁금합니다.", name: "이*진", date: "2026.03.01", status: "답변완료", mainType: "common", subType: "class" },
+  { id: 5, title: "레벨테스트 결과는 언제 나오나요?", name: "정*우", date: "2026.02.28", status: "답변대기", mainType: "common", subType: "level" },
+  { id: 6, title: "ITT 통번역 자격증 갱신 기간이 어떻게 되나요?", name: "강*희", date: "2026.02.26", status: "답변완료", mainType: "itt" },
+  { id: 7, title: "온라인 라이브러리 접속이 안 됩니다.", name: "윤*영", date: "2026.02.25", status: "답변완료", mainType: "common" },
+  { id: 8, title: "미국 주립대 테솔 수료증 재발급 가능한가요?", name: "조*민", date: "2026.02.24", status: "답변대기", mainType: "tesol" },
+  { id: 9, title: "무료 레벨테스트 예약은 어디서 하나요?", name: "임*준", date: "2026.02.22", status: "답변완료", mainType: "common", subType: "level" },
+  { id: 10, title: "주말반 결석 시 보강이 가능한가요?", name: "한*지", date: "2026.02.20", status: "답변완료", mainType: "common", subType: "class" },
+  { id: 11, title: "AI번역 교육 과정은 어떤 툴을 사용하나요?", name: "백*현", date: "2026.02.18", status: "답변완료", mainType: "ai-trans" },
+  { id: 12, title: "설명회 참석 후 당일 등록 혜택이 있나요?", name: "홍*성", date: "2026.02.15", status: "답변대기", mainType: "common", subType: "orientation" },
+  { id: 13, title: "취업 지원 서비스 내용이 궁금합니다.", name: "오*수", date: "2026.02.10", status: "답변완료", mainType: "common", subType: "job" }
 ];
 
 const reviews = [
@@ -241,26 +254,25 @@ export function CommunityPage() {
 
         <TabsContent value="faq" className="mt-0">
           <FilterBar />
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="w-full space-y-4">
+          <div className="bg-white border-y border-gray-100">
+            <Accordion type="single" collapsible className="w-full">
               {filterItems(faqs).map((faq, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-4 bg-white overflow-hidden border-gray-100 shadow-sm">
-                  <AccordionTrigger className="hover:no-underline py-5 text-left gap-4">
-                    <div className="flex flex-col gap-3 w-full">
+                <AccordionItem key={i} value={`item-${i}`} className="border-b border-gray-50 last:border-b-0">
+                  <AccordionTrigger className="hover:no-underline py-5 px-4 text-left hover:bg-gray-50/50 transition-colors group [&[data-state=open]]:bg-gray-50/50">
+                    <div className="flex items-center gap-4">
                       <div className="flex items-center gap-2">
-                        <Badge variant="outline" className="rounded-md font-bold text-[10px] px-2 py-0.5 border-none bg-blue-50 text-blue-600">
+                        <Badge variant="outline" className="shrink-0 rounded-md font-bold text-[10px] px-2 py-0.5 border-none bg-blue-50 text-blue-600">
                           {faq.mainType === 'common' ? '공통' : '과목별'}
                         </Badge>
-                        <span className="text-[12px] text-gray-400 font-medium">[{faq.category}]</span>
+                        <Badge variant="outline" className="shrink-0 rounded-md font-medium text-[11px] bg-gray-100 text-gray-500 border-gray-100">
+                          {faq.category}
+                        </Badge>
                       </div>
-                      <div className="flex items-center gap-4">
-                        <span className="text-[#8B1A2B] font-bold text-[18px]">Q.</span>
-                        <span className="text-[15px] font-bold text-[#1a1a2e]">{faq.question}</span>
-                      </div>
+                      <span className="text-[15px] font-normal text-gray-800 group-hover:text-[#8B1A2B] transition-colors text-left">{faq.question}</span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="text-[14px] text-gray-600 leading-relaxed pb-6 pt-2 pl-10">
-                    <div className="bg-gray-50 p-4 rounded-lg">
+                  <AccordionContent className="text-[14px] text-gray-600 leading-relaxed px-4 pb-6 pt-4 bg-gray-50/30 border-t border-gray-50">
+                    <div className="pl-[20px] md:pl-[140px]">
                       {faq.answer}
                     </div>
                   </AccordionContent>
