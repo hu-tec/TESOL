@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Environment
+.envrc
+.env
+.env.*
+
+# GitHub CLI local config
+.gh/
+
+# Firebase
+firebase-debug.log
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+node_modules
